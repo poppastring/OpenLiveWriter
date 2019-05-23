@@ -631,5 +631,41 @@
       <usePicasaS1600h>Yes</usePicasaS1600h>
     </options>
   </provider>
+  <provider>
+    <id>C9937DC9-D266-42EA-B244-753E30AC05ED</id>
+    <name>dasBlog Core</name>
+    <description>A new weblog engine built on .NET Core.</description>
+    <clientType>Metaweblog</clientType>
+    <rsdEngineNamePattern>dasBlog</rsdEngineNamePattern>
+    <postApiUrl>
+      <![CDATA[
+		{blog-homepage-url}feed/blogger
+		]]>
+    </postApiUrl>
+    <options>
+      <defaultView>WebLayout</defaultView>
+      <adminUrl>
+        <![CDATA[
+			{blog-homepage-url}account/login
+			]]>
+      </adminUrl>
+      <postEditingUrl>
+        <![CDATA[
+			{blog-homepage-url}post/{post-id}/edit
+			]]>
+      </postEditingUrl>
+      <supportsNewCategories>Yes</supportsNewCategories>
+      <supportsNewCategoriesInline>Yes</supportsNewCategoriesInline>
+      <invalidPostIdFaultCodePattern>^0$</invalidPostIdFaultCodePattern>
+      <invalidPostIdFaultStringPattern>object reference not set to an instance of an object</invalidPostIdFaultStringPattern>
+      <supportsMultipleCategories blogrunner:readonly="1">Yes</supportsMultipleCategories>
+      <supportsPostAsDraft blogrunner:readonly="1">No</supportsPostAsDraft>
+      <futurePublishDateWarning>No</futurePublishDateWarning>
+      <supportsEmptyTitles>Yes</supportsEmptyTitles>
+      <requiresHtmlTitles>Yes</requiresHtmlTitles>
+      <supportsEmbeds>Yes</supportsEmbeds>
+      <supportsScripts>Yes</supportsScripts>
+    </options>
+  </provider>
   
 </providers>
